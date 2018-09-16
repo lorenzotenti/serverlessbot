@@ -1,7 +1,6 @@
 import json, config
 from twython import Twython, TwythonError
 
-
 def retweet(event, context):
 
     twitter = Twython(config.APP_KEY, config.APP_SECRET, config.OAUTH_TOKEN, config.OAUTH_TOKEN_SECRET)
@@ -29,12 +28,3 @@ def retweet(event, context):
     }
 
     return response
-
-    # Use this code if you don't use the http event with the LAMBDA-PROXY
-    # integration
-    """
-    return {
-        "message": "Go Serverless v1.0! Your function executed successfully!",
-        "event": event
-    }
-    """
