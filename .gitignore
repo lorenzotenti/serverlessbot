@@ -1,0 +1,30 @@
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+__pycache__
+
+# Virtual Environment
+venv/
+
+# Serverless directories
+.serverless
+
+# config.py for Twitter keys and tokens
+config.py
+
+# Other stuff
+node_modules
