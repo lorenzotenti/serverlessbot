@@ -10,9 +10,9 @@ def retweet(event, context):
 
     for tweet in search_results['statuses']:
         try:
-            id_to_retweet = tweet['id']
-            twitter.retweet(id=id_to_retweet)
+            twitter.retweet(id=tweet['id'])
             message = f"Retweeted \"{tweet['text']}\" by {tweet['user']['name']}"
+            twitter.create_friendship(id=tweet['user']['id'])
             break
         except TwythonError:
             pass
