@@ -3,6 +3,8 @@
 This is a Twitter bot retweeting at regular intervals the most relevant tweets about serverless computing. 
 
 Find it [here](https://twitter.com/_serverlessbot_).
+
+A tutorial on how to build this bot can be found [here](https://dev.to/lorenzotenti/how-to-build-a-serverless-twitter-bot-lph).
  
 --- 
 
